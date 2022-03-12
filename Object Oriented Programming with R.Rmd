@@ -1,0 +1,40 @@
+---
+title: "Object Oriented Programming with R"
+output: html_notebook
+---
+
+- **S3** and **S4** are important things in OOP in R-Language. 
+
+- *S3* is used to overload the function, so that the functin can be called with different names and it depends on the types of input parameter or the number of parameters.
+
+**S3 Class**: In R, we define a function which will create a class and return the object of the created class. 
+```{r}
+s <- list(name = "Ram", age = 29, GPA = 4.0)  
+class(s) <- "Faculty"
+s
+```
+```{r}
+GPA =function(obj){
+  UseMethod("GPA")
+}
+```
+
+```{r}
+GPA.default <- function(obj){  
+cat("We are calling generic function\n")  
+}  
+GPA(s)
+```
+```{r}
+GPA.faculty <- function(obj){  
+cat("Final GPA is ",obj$GPA,"\n")  
+}  
+GPA(s)
+```
+
+
+
+
+
+
+

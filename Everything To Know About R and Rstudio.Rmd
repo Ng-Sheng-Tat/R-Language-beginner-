@@ -1,0 +1,53 @@
+---
+title: "Everything To Know About RStudio"
+author: "sheng tat"
+date: "3/12/2022"
+output: html_document
+---
+
+**Short Cut Key**:
+
+1. Alt + - => Assignment
+
+2. Ctrl + Enter => Run selected 
+
+3. Ctrl + Shift + k -> "Preview RMarkdown"
+
+4. Ctrl + Shift + c => comment the line
+
+5. Ctrl + Alt + r => Runs the entire script
+
+6. Alt + Shift + k => Helps Documentation
+
+
+**Working With Library**
+```{r}
+# library()
+# install.packages("zoo", lib="D:/R Language/R-4.0.3/library")
+# library("zoo", lib.loc="D:/R Language/R-4.0.3/library")
+# update.packages(ask = FALSE)
+```
+
+**Rendering Output**
+```{r}
+# library(rmarkdown)
+# render("1-example.Rmd")
+# update.packages(ask = FALSE)
+```
+
+**Tutorials Link:**
+- https://www.statmethods.net/interface/packages.html
+
+- https://www.codecademy.com/learn/r-for-programmers
+
+- https://www.javatpoint.com/r-tutorial
+
+- https://www.guru99.com/r-tutorial.html
+
+- https://www.w3schools.com/r/r_get_started.asp
+
+- https://www.tutorialspoint.com/r/index.htm
+
+- https://rmarkdown.rstudio.com/lesson-12.html
+
+
